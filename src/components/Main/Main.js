@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Footer from '../Footer/Footer';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Main = () => (
@@ -20,12 +20,12 @@ const Main = () => (
     </div>
 <div>
 <ul className={classes.Links}>
-        <li><a href="/">Main Page</a></li>
+        <li><Link to="/main">Main Page</Link></li>
         <li><a href="/">Contents</a></li>
         <li><a href="/">Current Events</a></li>
         <li><a href="/">Random Article</a></li>
         <li><a href="/">About Wikipedia</a></li>
-        <li><a href="/">Contact Us</a></li>
+        <li><Link to="/contact">Contact Us</Link></li>
         <li><a href="/">Donate</a></li>
         <li><a href="/">Log In</a></li>
         
@@ -39,7 +39,7 @@ const Main = () => (
     <p>Welcome to <a href="/">Wikipedia</a>!
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-primary">Search</Button>
+      <Button style={{margin: "0"}} variant="outline-primary">Search</Button>
     </Form></p>
 </div>
 <Cards className={classes.Cards} />

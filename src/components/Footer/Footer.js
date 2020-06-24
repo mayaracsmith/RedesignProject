@@ -1,15 +1,17 @@
 import React from 'react';
 import classes from './Footer.module.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-const Footer = () => (
+const Footer = () => {
+    React.useEffect(() => { window.scrollTo(0, 0); }, [])
+  return(
     <div>
       <section className={classes.Links}>
         <div className={classes.LinksInner}>
         <ul>
-            <li><a href="/">Main Page</a></li>
-            <li><a href="/">Contact Us</a></li>
+            <li><a><Link to="/main">Main Page</Link></a></li>
+            <li><Link to="/contact">Contact Us</Link></li>
             <li><a href="/">Log In</a></li>
           </ul>
           <ul>
@@ -52,8 +54,8 @@ const Footer = () => (
           </ul>
         </div>
       </footer>
-      </div>
-);
+      </div>)
+};
 
 
 export default Footer;
