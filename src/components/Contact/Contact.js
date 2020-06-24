@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import classes from './Contact.module.css';
 import Footer from '../Footer/Footer';
 
@@ -24,10 +24,10 @@ class Contact extends Component {
         if (!this.state.name) {
           nameError = "name cannot be blank";
         }
-    
+
         if (!this.state.email.includes("@")) {
-          emailError = "invalid email";
-        }
+            emailError = "invalid email";
+          }
     
         if (emailError || nameError) {
           this.setState({ emailError, nameError });

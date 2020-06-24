@@ -10,7 +10,7 @@ const Footer = () => {
       <section className={classes.Links}>
         <div className={classes.LinksInner}>
         <ul>
-            <li><a><Link to="/main">Main Page</Link></a></li>
+            <li><Link to="/main">Main Page</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><a href="/">Log In</a></li>
           </ul>
