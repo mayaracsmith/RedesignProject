@@ -64,3 +64,16 @@
   ul {
     list-style: none;
   }
+
+  @media(max-width: 500px){
+    .LinksInner {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+}
